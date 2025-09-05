@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+  <afc:Bibliography>
+    <File schema="afc" version="2.0.0.0" publicationDate="-date-time-" />
+    <Revision version="2" />
+    <Corporation author="MSC.Software" URI="http://www.mscsoftware.com/" />
+    <Author user="-user-name-" name="-real-name-" />
+    <Environment hostName="-host-name-" operatingSystem="-os-name- -os-release-" />
+    <Application name="MSC/AFC" version="02.00.00" />
+  </afc:Bibliography>
+  <afc:Units>
+    <afc:UnitSetting name="angle" current="degrees" />
+    <afc:UnitSetting name="current" current="ampere" />
+    <afc:UnitSetting name="force" current="newton" />
+    <afc:UnitSetting name="length" current="mm" />
+    <afc:UnitSetting name="luminosity" current="candela" />
+    <afc:UnitSetting name="mass" current="kg" />
+    <afc:UnitSetting name="quantity" current="mole" />
+    <afc:UnitSetting name="solidAngle" current="steradian" />
+    <afc:UnitSetting name="temperature" current="kelvin" />
+    <afc:UnitSetting name="time" current="second" />
+  </afc:Units>
+  <BumpStopProperties active="true" userDefined="false" diameter="0" height="0" dampingMethod="linear" dampingRate="0" scaleFactor="1" linearRate="0" quadraticRate="0" cubicRate="0" method="non_linear">
+    <BumpStopSpline name="spline_data" id="0" active="true" userDefined="false" interpolation_method="akima">
+      <![CDATA[
+              0               0
+             15             126
+             25             315
+             36            1305
+             41            1800
+             45            2700
+           45.6            2979
+          46.35            3780
+             48            8280
+             49           11070
+             50           13950
+             51           17100
+             52           21150
+             53           26100
+             54           31050
+]]>
+    </BumpStopSpline>
+    <BumpStopSpline name="damping_data" id="0" active="true" userDefined="false" interpolation_method="akima">
+      <![CDATA[
+         -50000               0
+         -20000               0
+              0               0
+          20000               0
+          50000               0
+]]>
+    </BumpStopSpline>
+  </BumpStopProperties>
+</afc>

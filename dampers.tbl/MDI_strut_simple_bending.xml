@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc
+ xmlns="http://www.mscsoftware.com/:vfc"
+ xmlns:afc="http://www.mscsoftware.com/:afc"
+>
+     <afc:Bibliography
+     >
+          <File
+           schema="afc"
+           version="2.0.0.0"
+           URI="mdids://private/dampers.tbl/test_6.xml"
+           publicationDate="2015-06-16 16:47:01+05:30"
+          />
+          <Revision
+           version="2"
+          />
+          <Corporation
+           author="MSC.Software"
+           URI="http://www.mscsoftware.com/"
+          />
+          <Author
+           user="hauthan"
+           name="-unknown name-"
+          />
+          <Environment
+           hostName="IND-Hemanshu"
+           operatingSystem="MS Windows NT 6.1"
+          />
+          <Application
+           name="MSC/AFC"
+           version="02.00.00"
+          />
+     </afc:Bibliography>
+     <afc:Units
+     >
+          <afc:UnitSetting
+           name="angle"
+           current="deg"
+          />
+          <afc:UnitSetting
+           name="current"
+           current="ampere"
+          />
+          <afc:UnitSetting
+           name="force"
+           current="newton"
+          />
+          <afc:UnitSetting
+           name="length"
+           current="mm"
+          />
+          <afc:UnitSetting
+           name="luminosity"
+           current="candela"
+          />
+          <afc:UnitSetting
+           name="mass"
+           current="kilogram"
+          />
+          <afc:UnitSetting
+           name="quantity"
+           current="mole"
+          />
+          <afc:UnitSetting
+           name="solidAngle"
+           current="steradian"
+          />
+          <afc:UnitSetting
+           name="temperature"
+           current="kelvin"
+          />
+          <afc:UnitSetting
+           name="time"
+           current="second"
+          />
+     </afc:Units>
+     <StrutProperties
+      active="true"
+      definition="$AFM_AFT/utility/strut.py"
+      userDefined="false"
+      method="non_linear"
+      upperDiameter="60"
+      upperLength="50"
+      lowerDiameter="300"
+      lowerLength="300"
+      rate="0"
+      dampingMethod="non_linear"
+      gasPreloadMethod="none"
+      gasPreloadConstant="0"
+      bendingMethod="simple"
+      topStrutLength="200"
+      bottomStrutLength="200"
+      bendingStiffness="250"
+      bendingDamping="25"
+      rodLashDistance="0"
+      rodLashStiffness="0"
+      pistonLashDistance="0"
+      pistonLashStiffness="0"
+      rodDiameter="0"
+      rodLength="0"
+      innerTubeOuterDiameter="0"
+      innerTubeInnerDiameter="0"
+      innerTubeLength="0"
+      outerTubeOuterDiameter="0"
+      outerTubeInnerDiameter="0"
+      outerTubeLength="0"
+     >
+          <Spline
+           name="spline_data"
+           id="0"
+           active="true"
+           userDefined="false"
+           interpolation_method="akima"
+           xLabel="Velocity"
+           yLabel="Force"
+           xUnit="mm/s"
+           yUnit="newton"
+          >
+            <![CDATA[
+          -2032           -1217
+          -1778           -1061
+          -1524            -904
+          -1270            -748
+          -1016            -592
+           -813            -449
+           -762            -414
+           -711            -387
+           -660            -351
+           -610            -315
+           -559            -289
+           -508            -258
+           -457            -231
+           -406            -205
+           -356            -187
+           -330            -178
+           -305            -169
+           -279            -156
+           -254            -151
+           -203            -137
+           -152            -125
+           -102            -111
+            -51             -89
+          -25.4             -76
+              0               0
+           25.4              57
+             51              97
+            102             235
+            152             444
+            203             667
+            254             769
+            279             801
+            305             827
+            330             854
+            356             876
+            406             921
+            457             965
+            508            1005
+            559            1050
+            610            1085
+            660            1130
+            711            1179
+            762            1218
+            813            1263
+           1016            1421
+           1270            1627
+           1524            1831
+           1778            2040
+           2032            2247
+]]>
+               <Comment
+                userDefined="false"
+               >
+                 <![CDATA[Sign Convention for Damper Force-Velocity Curve:
+        Positive values indicate Extension
+        Negative values indicate Compression
+
+        X and Y values must have same sign
+
+
+
+]]>
+               </Comment>
+          </Spline>
+          <Spline
+           name="gasPreloadForceCurve"
+           id="0"
+           active="true"
+           userDefined="false"
+           interpolation_method="akima"
+          >
+            <![CDATA[
+         -50000               0
+         -20000               0
+              0               0
+          20000               0
+          50000               0
+]]>
+          </Spline>
+          <Material
+           name="rod_material_data"
+           active="true"
+           userDefined="false"
+           youngs_modulus="0"
+           poissons_ratio="0"
+           density="0"
+           scale_factor="1"
+          />
+          <Material
+           name="itube_material_data"
+           active="true"
+           userDefined="false"
+           youngs_modulus="0"
+           poissons_ratio="0"
+           density="0"
+           scale_factor="1"
+          />
+          <Material
+           name="otube_material_data"
+           active="true"
+           userDefined="false"
+           youngs_modulus="0"
+           poissons_ratio="0"
+           density="0"
+           scale_factor="1"
+          />
+     </StrutProperties>
+</afc>

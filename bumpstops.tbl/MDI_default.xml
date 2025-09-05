@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+  <afc:Bibliography>
+    <File schema="afc" version="1.0.0.0" URI="/vobs/vpg/acar/src/shared_car_database.cdb/bumpstops.tbl/MDI_default.xml" publicationDate="2003-01-24T16:49:59-05:00" />
+    <Revision version="1" />
+    <Corporation author="Mechanical Dynamics, Inc." URI="http://www.adams.com/" />
+    <Author user="carlib" name="Car Library" />
+    <Environment hostName="yukon" operatingSystem="IRIX64 6.5" />
+    <Application name="Adams Chassis" version="2003" />
+  </afc:Bibliography>
+  <afc:Units>
+    <afc:UnitSetting name="angle" current="deg" />
+    <afc:UnitSetting name="current" current="ampere" />
+    <afc:UnitSetting name="force" current="newton" />
+    <afc:UnitSetting name="length" current="mm" />
+    <afc:UnitSetting name="luminosity" current="candela" />
+    <afc:UnitSetting name="mass" current="kilogram" />
+    <afc:UnitSetting name="quantity" current="mole" />
+    <afc:UnitSetting name="solidAngle" current="steradian" />
+    <afc:UnitSetting name="temperature" current="kelvin" />
+    <afc:UnitSetting name="time" current="second" />
+  </afc:Units>
+  <BumpStopProperties active="true" definition="$AFM_AFT/utility/jbumper.py" diameter="40" height="48" dampingMethod="linear" dampingRate="0" scaleFactor="1" linearRate="0" quadraticRate="4" cubicRate="0" method="non_linear">
+    <BumpStopSpline name="spline_data" id="0" active="true" interpolation_method="akima">
+      <![CDATA[
+              0               0
+             15             126
+             25             315
+             36            1305
+             41            1800
+             45            2700
+           45.6            2979
+          46.35            3780
+             48            8280
+             49           11070
+             50           13950
+             51           17100
+             52           21150
+             53           26100
+             54           31050
+]]>
+      <Comment>
+        <![CDATA[            
+
+! Spline for the front jounce bumper
+
+]]>
+      </Comment>
+    </BumpStopSpline>
+    <BumpStopSpline name="damping_data" id="0" active="true" interpolation_method="akima">
+      <![CDATA[
+]]>
+    </BumpStopSpline>
+  </BumpStopProperties>
+</afc>

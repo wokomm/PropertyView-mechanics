@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc
+ xmlns="http://www.mscsoftware.com/:vfc"
+ xmlns:afc="http://www.mscsoftware.com/:afc"
+>
+     <afc:Bibliography
+     >
+          <File
+           schema="afc"
+           version="2.0.0.0"
+           URI="mdids://private/dampers.tbl/damper_w_preload.xml"
+           publicationDate="2009-07-14 14:56:42-07:00"
+          />
+          <Revision
+           version="2"
+          />
+          <Corporation
+           author="MSC.Software"
+           URI="http://www.mscsoftware.com/"
+          />
+          <Author
+           user="gwheeler"
+           name="-unknown name-"
+          />
+          <Environment
+           hostName="L30483"
+           operatingSystem="MS Windows NT 5.1"
+          />
+          <Application
+           name="MSC/AFC"
+           version="02.00.00"
+          />
+     </afc:Bibliography>
+     <afc:Units
+     >
+          <afc:UnitSetting
+           name="angle"
+           current="degrees"
+          />
+          <afc:UnitSetting
+           name="current"
+           current="ampere"
+          />
+          <afc:UnitSetting
+           name="force"
+           current="newton"
+          />
+          <afc:UnitSetting
+           name="length"
+           current="mm"
+          />
+          <afc:UnitSetting
+           name="luminosity"
+           current="candela"
+          />
+          <afc:UnitSetting
+           name="mass"
+           current="kg"
+          />
+          <afc:UnitSetting
+           name="quantity"
+           current="mole"
+          />
+          <afc:UnitSetting
+           name="solidAngle"
+           current="steradian"
+          />
+          <afc:UnitSetting
+           name="temperature"
+           current="kelvin"
+          />
+          <afc:UnitSetting
+           name="time"
+           current="second"
+          />
+     </afc:Units>
+     <DamperProperties
+      active="true"
+      userDefined="false"
+      method="non_linear"
+      upperDiameter="60"
+      upperLength="50"
+      lowerDiameter="300"
+      lowerLength="300"
+      rate="0"
+      dampingMethod="non_linear"
+      gasPreloadMethod="constant"
+      gasPreloadConstant="1000"
+     >
+          <Spline
+           name="spline_data"
+           id="0"
+           active="true"
+           userDefined="false"
+           interpolation_method="akima"
+          >
+            <![CDATA[
+          -1270         -1495.5
+           -254          -809.5
+         -152.4          -654.8
+           -127          -587.1
+         -101.6          -533.8
+          -76.2          -455.5
+          -50.8          -370.1
+          -25.4          -206.4
+              0               0
+           25.4           462.6
+           50.8           695.4
+           76.2             854
+          101.6           966.4
+            127          1085.1
+          152.4          1171.4
+            254          1423.4
+           1270          3218.1
+]]>
+          </Spline>
+          <Spline
+           name="gasPreloadForceCurve"
+           id="0"
+           active="true"
+           userDefined="false"
+           interpolation_method="akima"
+          >
+            <![CDATA[
+              0            2000
+            150            1600
+            300            1400
+            400            1200
+            500            1000
+]]>
+               <Comment
+                userDefined="false"
+               >
+                 <![CDATA[]]>
+               </Comment>
+          </Spline>
+     </DamperProperties>
+</afc>

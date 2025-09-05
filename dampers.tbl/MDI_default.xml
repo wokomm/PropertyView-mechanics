@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+  <afc:Bibliography>
+    <File schema="afc" version="1.0.0.0" URI="/vobs/vpg/acar/src/shared_car_database.cdb/dampers.tbl/MDI_default.xml" publicationDate="2003-01-24T16:38:50-05:00" />
+    <Revision version="1" />
+    <Corporation author="Mechanical Dynamics, Inc." URI="http://www.adams.com/" />
+    <Author user="carlib" name="Car Library" />
+    <Environment hostName="yukon" operatingSystem="IRIX64 6.5" />
+    <Application name="Adams Car" version="2003" />
+  </afc:Bibliography>
+  <afc:Units>
+    <afc:UnitSetting name="angle" current="deg" />
+    <afc:UnitSetting name="current" current="ampere" />
+    <afc:UnitSetting name="force" current="newton" />
+    <afc:UnitSetting name="length" current="mm" />
+    <afc:UnitSetting name="luminosity" current="candela" />
+    <afc:UnitSetting name="mass" current="kilogram" />
+    <afc:UnitSetting name="quantity" current="mole" />
+    <afc:UnitSetting name="solidAngle" current="steradian" />
+    <afc:UnitSetting name="temperature" current="kelvin" />
+    <afc:UnitSetting name="time" current="second" />
+  </afc:Units>
+  <DamperProperties active="true" definition="$AFM_AFT/utility/shock.py" method="non_linear" upperDiameter="60" upperLength="50" lowerDiameter="300" lowerLength="300" rate="0" dampingMethod="non_linear">
+    <Spline name="spline_data" id="0" active="true" interpolation_method="akima" xLabel="Velocity" yLabel="Force" xUnit="mm/s" yUnit="newton">
+      <![CDATA[
+          -1270         -1495.5
+           -254          -809.5
+         -152.4          -654.8
+           -127          -587.1
+         -101.6          -533.8
+          -76.2          -455.5
+          -50.8          -370.1
+          -25.4          -206.4
+              0               0
+           25.4           462.6
+           50.8           695.4
+           76.2             854
+          101.6           966.4
+            127          1085.1
+          152.4          1171.4
+            254          1423.4
+           1270          3218.1
+]]>
+    </Spline>
+  </DamperProperties>
+</afc>

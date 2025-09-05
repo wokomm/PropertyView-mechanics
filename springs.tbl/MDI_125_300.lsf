@@ -1,0 +1,16 @@
+$---------------------------------------------------------------------MDI_HEADER
+[MDI_HEADER]
+ FILE_TYPE     =  'lsf'
+ FILE_VERSION  =  4.0
+ FILE_FORMAT   =  'ASCII'
+$--------------------------------------------------------------------------UNITS
+[UNITS]
+ LENGTH  =  'mm'
+ ANGLE   =  'degrees'
+ FORCE   =  'newton'
+ MASS    =  'kg'
+ TIME    =  'second'
+$--------------------------------------------------------------------SPRING_DATA
+[SPRING_DATA]
+ STIFFNESS    =  125.0
+ FREE_LENGTH  =  300.0
